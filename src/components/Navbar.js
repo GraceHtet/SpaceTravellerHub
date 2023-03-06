@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import logo from '../assets/img/planet-color.png'
 import styles from '../styles/Navbar.module.css'
 
@@ -16,6 +16,7 @@ const Navbar = () => {
           <NavLink to="/missions">Missions</NavLink>|<NavLink to="/profile">My Profile</NavLink>
         </div>
       </nav>
+      <Outlet />
     </>
   );
 };
