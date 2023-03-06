@@ -17,20 +17,24 @@ const Missions = () => {
     <div>
       <h1 className={styles.title}>Missions</h1>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
+      {missions.length === 0 && (
+        <p className={styles.loading}>Loading missions...</p>
+      )}
+
+      <table className={styles.table}>
+        <thead className={styles.thead}>
+          <tr className={styles.tr}>
+            <th className={styles.th}>Mission</th>
+            <th className={styles.th}>Description</th>
+            <th className={styles.th}>Status</th>
           </tr>
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <tr key={mission.mission_id}>
-              <td>{mission.mission_name}</td>
-              <td>{mission.description}</td>
-              <td>{mission.status}</td>
+            <tr className={styles.tr} key={mission.mission_id}>
+              <td className={styles.td}>{mission.mission_name}</td>
+              <td className={styles.td}>{mission.description}</td>
+              <td className={styles.td}>Not booked</td>
             </tr>
           ))}
         </tbody>
