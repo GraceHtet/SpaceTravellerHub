@@ -1,16 +1,16 @@
-.logo-container {
+.logoContainer {
   width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-icon {
+.logoIcon {
   width: 40px;
   height: 40px;
 }
 
-.logo-text {
+.logoText {
   font-size: 1.8em;
 }
 
