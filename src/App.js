@@ -3,10 +3,10 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='*' element={<Navbar />} />
+          <Route path="*" element={<Navbar />} />
         </Routes>
       </BrowserRouter>
     </div>
