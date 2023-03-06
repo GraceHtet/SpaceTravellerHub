@@ -1,0 +1,22 @@
+.logoContainer {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.logoText {
+  font-size: 1.8em;
+}
+
+.navbar {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
