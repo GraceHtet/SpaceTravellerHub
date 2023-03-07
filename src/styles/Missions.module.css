@@ -1,0 +1,26 @@
+.title {
+  color: crimson;
+}
+
+.table,
+.th,
+.td {
+  border: 1px solid black;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.th {
+  text-align: left;
+}
+
+.td,
+.th {
+  padding: 10px;
+}
+
+.tr:nth-child(even) {
+  background-color: #e2e2e2;
+}
