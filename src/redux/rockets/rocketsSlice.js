@@ -5,7 +5,7 @@ const url = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
   rocketLists: [],
-  isLoading: false,
+  status: false,
 };
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
@@ -28,16 +28,13 @@ const rocketsSlice = createSlice({
   },
   extraReducers(builder) {
     builder
-      .addCase(fetchRockets.pending, (state) => ({ ...state, isLoading: true }))
+      .addCase(fetchRockets.pending, (state) => ({ ...state, status: true }))
       .addCase(fetchRockets.fulfilled, (state, action) => ({
+        ...state,
         rocketLists: action.payload,
-        isLoading: true,
       }));
   },
 });
-
-export const selectRockets = (state) => state.rockets.rocketLists;
-export const getStatus = (state) => state.rockets.isLoading;
 
 export const { reserveRocket } = rocketsSlice.actions;
 
