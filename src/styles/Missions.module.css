@@ -24,3 +24,17 @@
 .tr:nth-child(even) {
   background-color: #e2e2e2;
 }
+
+.memberStatus {
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.joined {
+  background-color: #25a2b7;
+}
+
+.notJoined {
+  background-color: #6d757d;
+}
