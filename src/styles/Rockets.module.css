@@ -13,12 +13,27 @@ article {
   margin: 0;
 }
 
-.btn {
+.span {
+  background: rgb(27, 158, 191);
+  color: #fff;
+  padding: 0 1%;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+.reserve,
+.unreserve {
   background-color: rgb(30, 135, 255);
   color: #fff;
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  padding: 1.5% 2%;
+  padding: 1% 2%;
   cursor: pointer;
+}
+
+.unreserve {
+  background: #fff;
+  color: #000;
+  border: 1px solid gray;
 }
