@@ -20,7 +20,7 @@ const Rockets = () => {
           <img src={each.flickr_images} className={styles.img} alt="rocket" />
           <div>
             <h2 className={styles.title}>{each.name}</h2>
-            <p>
+            <p className={styles.rocketDetails}>
               {each.reserved ? <span className={styles.span}>Reserved</span> : ''}
               {each.description}
             </p>
