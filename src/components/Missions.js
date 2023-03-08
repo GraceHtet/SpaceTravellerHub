@@ -51,6 +51,7 @@ const Missions = () => {
               </td>
               <td className={`${styles.td} ${styles.action}`}>
                 <button
+                  id={mission.mission_name}
                   type="button"
                   onClick={() => handleJoinMission(mission.mission_id)}
                   className={`${styles.button} ${mission.joined ? styles.leave : styles.join}`}
