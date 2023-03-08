@@ -16,9 +16,9 @@ article {
 .span {
   background: rgb(27, 158, 191);
   color: #fff;
-  padding: 0 1%;
+  padding: 4px 12px;
   border-radius: 10px;
-  margin-right: 2%;
+  margin-right: 5px;
 }
 
 .reserve,
@@ -36,4 +36,8 @@ article {
   background: #fff;
   color: #000;
   border: 1px solid gray;
+}
+
+.rocketDetails {
+  line-height: 1.5;
 }

@@ -1,11 +1,13 @@
 .container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
-.rocket {
-  grid-column: 2 / span 1;
+.rocket,
+.mission {
+  width: 100%;
 }
 
 table,

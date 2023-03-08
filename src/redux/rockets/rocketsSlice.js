@@ -4,7 +4,7 @@ import axios from 'axios';
 const url = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
-  rocketLists: [],
+  rockets: [],
   status: false,
 };
 
@@ -18,12 +18,12 @@ const rocketsSlice = createSlice({
   initialState,
   reducers: {
     reserveRocket: (state, { payload }) => {
-      const rockets = state.rocketLists.map((rocket) => {
+      const rockets = state.rockets.map((rocket) => {
         if (rocket.id === payload) return { ...rocket, reserved: !rocket.reserved };
         return rocket;
       });
 
-      return { ...state, rocketLists: rockets };
+      return { ...state, rockets };
     },
   },
   extraReducers(builder) {
@@ -31,7 +31,7 @@ const rocketsSlice = createSlice({
       .addCase(fetchRockets.pending, (state) => ({ ...state, status: true }))
       .addCase(fetchRockets.fulfilled, (state, action) => ({
         ...state,
-        rocketLists: action.payload,
+        rockets: action.payload,
       }));
   },
 });
