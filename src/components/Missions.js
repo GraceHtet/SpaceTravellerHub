@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions } from '../redux/missions/missionsSlice';
+import { fetchMissions, joinMission } from '../redux/missions/missionsSlice';
 import styles from '../styles/Missions.module.css';
 
 const Missions = () => {
@@ -12,6 +12,15 @@ const Missions = () => {
       dispatch(fetchMissions());
     }
   }, [dispatch, missions]);
+
+  const handleJoinMission = (missionId) => {
+    const mission = missions.find((mission) => mission.mission_id === missionId);
+    const newMission = { ...mission, joined: !mission.joined };
+    const newMissions = missions.map((mission) => (mission.mission_id === missionId
+      ? newMission
+      : mission));
+    dispatch(joinMission(newMissions));
+  };
 
   return (
     <div>
@@ -26,15 +35,29 @@ const Missions = () => {
           <tr className={styles.tr}>
             <th className={styles.th}>Mission</th>
             <th className={styles.th}>Description</th>
-            <th className={styles.th}>Status</th>
+            <th className={`${styles.th} ${styles.status}`}>Status</th>
+            <th className={`${styles.th} ${styles.action}`}>Action</th>
           </tr>
         </thead>
         <tbody>
           {missions.map((mission) => (
             <tr className={styles.tr} key={mission.mission_id}>
-              <td className={styles.td}>{mission.mission_name}</td>
+              <td className={`${styles.td} ${styles.missionName}`}>{mission.mission_name}</td>
               <td className={styles.td}>{mission.description}</td>
-              <td className={styles.td}>Not booked</td>
+              <td className={`${styles.td}`}>
+                <p className={`${styles.memberStatus} ${mission.joined ? styles.joined : styles.notJoined}`}>
+                  {mission.joined ? 'Active Member' : 'NOT A MEMBER'}
+                </p>
+              </td>
+              <td className={`${styles.td} ${styles.action}`}>
+                <button
+                  type="button"
+                  onClick={() => handleJoinMission(mission.mission_id)}
+                  className={`${styles.button} ${mission.joined ? styles.leave : styles.join}`}
+                >
+                  {mission.joined ? 'Leave Mission' : 'Join Mission'}
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>
