@@ -3,7 +3,9 @@
 <!--
 HOW TO USE:
 This is an example of how you may give instructions on setting up your project locally.
+
 Modify this file to match your project and remove sections that don't apply.
+
 REQUIRED SECTIONS:
 - Table of Contents
 - About the Project
@@ -16,15 +18,17 @@ REQUIRED SECTIONS:
 - Show your support
 - Acknowledgements
 - License
+
+OPTIONAL SECTIONS:
+- FAQ
+
 After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
-
-  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/> -->
-
-  <h3><b>Space Traveller Hub README</b></h3>
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="./src/assets/img/planet-color.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
 </div>
 
@@ -34,42 +38,30 @@ After you're finished please remove all the comments and instructions!
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    <!-- - [Tech Stack](#tech-stack) -->
+    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-
   - [Setup](#setup)
-
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  <!-- - [Prerequisites](#prerequisites)
-  - [Deployment](#triangular_flag_on_post-deployment) -->
-
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space-Traveller-Hub] <a name="Space-Traveller-Hub-project"></a>
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
-> This is the website where you can see rockets and missions.
-
-In **[Space-Traveller-Hub]** , you can reserve rocket and join mission. And you can see the joined missions and reserved rockets in your profile page. If you want to cancel missions or rocket, you can do that by clicking on leave mission or cancel reservation.
-
-<img src="./src/assets/img/SpaceTravelerHub.gif" alt="page-gif"/>
+**Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> I use react.js for front-end.
 
 <details>
   <summary>Client</summary>
@@ -77,37 +69,24 @@ In **[Space-Traveller-Hub]** , you can reserve rocket and join mission. And you 
     <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
 </details>
-
-<!-- <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
 </details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details> -->
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-<!-- > Describe between 1-3 key features of the application. -->
+- **User can book rockets**
+- **User can cancel rockets**
+- **User can join missions**
+- **User can leave missions**
 
-- **[JS OBJECTS]**
-- **[REACT]**
-- **[Redux toolkit]**
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link]() -->
+- Under construction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,55 +98,42 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project :
+In order to run this project you need:
 
-<!--
-Example command:
-```sh
- gem install rails
-```
- -->
-
-You need to have Node.js installed.
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
 ### Setup
 
-https://github.com/GraceHtet/SpaceTravellerHub.git
+Clone this repository to your desired folder:
 
-Clone this repo into your desire folder and then cd into it.
+```sh
+  git clone git@github.com:GraceHtet/SpaceTravellerHub.git
+  cd SpaceTravellerHub
+```
 
 ### Install
 
+Install this project with:
+
 ```sh
-npm install
+  npm install
 ```
 
 ### Usage
 
-Run following command to start development server with live update.
+To run the project, execute the following command:
 
 ```sh
-npm run start
-```
-
-To build the app
-
-```sh
-npm run build
+  npm start
 ```
 
 ### Run tests
 
-Run the following command to test the components
+To run tests, run the following command:
 
 ```sh
-npm run test
-```
-
-To check the linter errors
-
-```sh
-npm run linters
+    npm test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -179,12 +145,13 @@ npm run linters
 👤 **Grace Htet**
 
 - GitHub: [Grace Htet](https://github.com/GraceHtet)
-- LinkedIn: [Grace Htet](https://www.linkedin.com/in/thirihtethtetaung/)
+- LinkedIn: [Grace Htet](https://linkedin.com/in/thirihtethtetaung)
 
-👤 **Shasherazi**
+👤 **shasherazi**
 
-- GitHub: [Shasherazi](https://github.com/shasherazi)
-- LinkedIn: [Shasherazi](https://www.linkedin.com/in/shasherazi)
+- GitHub: [shasherazi](https://github.com/shasherazi)
+- Twitter: [shasherazi](https://twitter.com/shasherazi)
+- LinkedIn: [shasherazi](https://linkedin.com/in/shasherazi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,10 +159,9 @@ npm run linters
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-<!-- > Describe 1 - 3 features you will add to the project. -->
-
-- [ ] **[Add some more category]**
-- [ ] **[Update UI/UX Design]**
+- **Link Wikipedia articles to missions**
+- **Link Nasa articles to rockets**
+- **Add more details to rockets and missions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -213,31 +179,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please don't forget to follow me and give me advice so that I can improve more.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse and coding partner.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-<!-- > Add at least 2 questions new developers would ask when they decide to use your project. -->
-
-- **Can you make a list of 10 Most Popular Books based of the inputs in your page?**
-
-  - Hi! Thank you for the suggestion. It would be an honor to please our readers. We will do that ASAP.
-
-<!-- - **[Question_2]**
-
-  - [Answer_2] -->
+If you like this project please give it a ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
