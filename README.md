@@ -59,6 +59,8 @@ After you're finished please remove all the comments and instructions!
 
 **Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
+![gif](./src/assets/img/SpaceTravelerHub.gif)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
