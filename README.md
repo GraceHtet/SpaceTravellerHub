@@ -63,11 +63,7 @@ After you're finished please remove all the comments and instructions!
 
 In **[Space-Traveller-Hub]** , you can reserve rocket and join mission. And you can see the joined missions and reserved rockets in your profile page. If you want to cancel missions or rocket, you can do that by clicking on leave mission or cancel reservation.
 
-<video controls loop>
-    <source src="./src/assets/video/paceTravelerHub.mp4" type="video/mp4">
-</video>
-
-- [Live Demo Link]()https://drive.google.com/uc?id=1zNIYBQ83vwoiGJdkpouScHu9JD_mQZxS&export=download
+<img src="./src/assets/img/SpaceTravelerHub.gif" alt="page-gif"/>
 
 ## 🛠 Built With <a name="built-with"></a>
 
