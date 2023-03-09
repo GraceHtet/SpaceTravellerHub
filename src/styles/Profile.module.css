@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.rocket,
+.mission {
+  width: 100%;
+}
+
+table,
+.tbody {
+  width: 100%;
+  display: inline-block;
+}
+
+.tr {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  padding: 2%;
+}
+
+.tr:first-child {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.tr:not(:first-child) {
+  border-top: none;
+}
+
+.tr:last-child {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}

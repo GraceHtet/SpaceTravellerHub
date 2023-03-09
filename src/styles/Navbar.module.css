@@ -1,0 +1,26 @@
+.logoContainer {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: content;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  padding: 0 0.5rem;
+}
+
+.logoText {
+  font-size: 1.8em;
+  white-space: nowrap;
+}
+
+.navbar {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  flex-basis: content;
+  gap: 1rem;
+}

@@ -1,0 +1,69 @@
+.title {
+  color: crimson;
+}
+
+.table,
+.th,
+.td {
+  border: 1px solid black;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.th {
+  text-align: left;
+}
+
+.status,
+.action {
+  width: 120px;
+}
+
+.td,
+.th {
+  padding: 10px;
+}
+
+.missionName {
+  font-weight: bold;
+}
+
+.tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.memberStatus {
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.joined {
+  background-color: #25a2b7;
+}
+
+.notJoined {
+  background-color: #6d757d;
+}
+
+.button {
+  background: none;
+  border: 1px solid #353a40;
+  border-radius: 5px;
+  padding: 5px;
+  color: #353a40;
+  cursor: pointer;
+}
+
+.action {
+  text-align: center;
+}
+
+.leave {
+  border-color: #cb454b;
+  color: #cb454b;
+}
