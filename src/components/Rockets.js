@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-// eslint-disable-next-line object-curly-newline
 import { fetchRockets, reserveRocket } from '../redux/rockets/rocketsSlice';
 import styles from '../styles/Rockets.module.css';
 
