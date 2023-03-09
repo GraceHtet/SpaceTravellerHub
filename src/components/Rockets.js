@@ -16,7 +16,7 @@ const Rockets = () => {
     <div className={styles.container}>
       {status && rockets.map((each) => (
         <article key={each.id} className={styles.article}>
-          <img src={each.flickr_images} className={styles.img} alt="rocket" />
+          <img src={each.image} className={styles.img} alt="rocket" />
           <div>
             <h2 className={styles.title}>{each.name}</h2>
             <p className={styles.rocketDetails}>
