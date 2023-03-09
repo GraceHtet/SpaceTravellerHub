@@ -9,7 +9,14 @@ const initialState = {
 
 export const fetchMissions = createAsyncThunk('missions/fetchMissions', async () => {
   const response = await axios.get(url);
-  return response.data;
+  const missions = response.data;
+  return missions.map((mission) => (
+    {
+      mission_id: mission.mission_id,
+      mission_name: mission.mission_name,
+      description: mission.description,
+    }
+  ));
 });
 
 const missionsSlice = createSlice({
